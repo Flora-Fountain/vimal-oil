@@ -16,16 +16,9 @@ body{
     -webkit-text-stroke:1px transparent;
 }
 
-:root{
-    --whitefontcolor:#ffffff;
-    --bluefontColor:#146dbb;
-    --yellowfontcolor:#ffdd00;
-    --bluebackground:#0c56a1;
-    --whitebackground:#ffffff;
-}
 
 a{
-    color:var(--yellowfontcolor);
+    color:#ffdd00;
     text-decoration: none !important;
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -35,7 +28,7 @@ a:hover,
 a:focus{
     text-decoration: none;
     outline: none;
-    color: var(--bluefontColor);
+    color: #0c56a1;
 }
 .text-noeffect{
     font-size:inherit !important;
@@ -52,15 +45,14 @@ a:focus{
     border:0 !important;
 }
 .default-section{
-    display: inline-block;
-    width: 100%;
     padding: 30px 0px;
+    position: relative;
 }
 
 /*  module-1 header css code */
 .header{
     width: 100%;
-    padding: 0px 30px;
+    padding: 20px 30px;
 }
 
 .nav-menu{
@@ -68,6 +60,11 @@ a:focus{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+}
+
+.nav-menu .logo img{
+    width: auto;
+    height: 90px;
 }
 
 .nav-menu .menu-btn{
@@ -88,51 +85,140 @@ a:focus{
     margin-top: 10px;
 }
 .nav-menu .menu-btn:hover span {
-	background: #fdcd0b;
+	background: #ffdd00;
 }
 
 
 /* module-2 hero banner css code  */
 .hero-banner{
-    background: url(../images/background-banner.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    display: flex;    
+    background-color: #0c56a1;
+}
+.hero-banner::before{
+    content: url();
 }
 
 
+
 /* module-3 health-section css code  */
-
-
+.health-section::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #0c56a1;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
 
 /* module-4 product section css code  */
+.product-section{
+    background: #0c56a1;
+}
 
+.product-section .h2-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+}
 
 
 /* module-5 nrt-section css code  */
+.nrt-section{
+    background-color: #ffffff;
+}
 
-
+.nrt-section::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #0c56a1;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
 
 /* module-6 journey section css code  */
+.vimal-journey{
+    background-color: #0c56a1;
+}
 
+.vimal-journey::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #ffffff;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
 
+.vimal-journey .h2-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.vimal-journey .head-para{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff;
+}
 
 /* module-7 oil-quiz section css  */
-
+.oil-quiz{
+    background-color: #ffffff;
+}
 
 
 /* module-8 recipe-section css code  */
+.recipe-section{
+    background-color: #fff;
+}
 
-
+.recipe-section::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #0c56a1;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
 
 /* module-9 social-presence css code */
+.social-presence{
+    background-color: #0c56a1;
+}
 
+.social-presence::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #ffffff;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
 
 
 /* module-10 form-section css code  */
+.form-section{
+    background-color: #ffffff;
+}
 
+.form-section::before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #0c56a1;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
+}
 
 /* module-11 footer section css code */
+.footer{
+    background-color: #0c56a1;
+}
