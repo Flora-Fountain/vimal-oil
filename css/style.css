@@ -18,7 +18,6 @@ body{
 
 
 a{
-    color:#ffdd00;
     text-decoration: none !important;
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
@@ -28,7 +27,6 @@ a:hover,
 a:focus{
     text-decoration: none;
     outline: none;
-    color: #0c56a1;
 }
 .text-noeffect{
     font-size:inherit !important;
@@ -49,10 +47,24 @@ a:focus{
     position: relative;
 }
 
+.h2-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
 /*  module-1 header css code */
 .header{
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: auto;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(255,255,255,0);
 }
 
 .nav-menu{
@@ -73,7 +85,7 @@ a:focus{
     cursor: pointer;
 } 
 .nav-menu .menu-btn span{
-    width: 50px;
+    width: 40px;
     height: 4px;
     display: block;
     background-color: #212121;
@@ -115,14 +127,6 @@ a:focus{
     background: #0c56a1;
 }
 
-.product-section .h2-title{
-    text-align: center;
-    font-size: 32px;
-    font-weight: 400;
-    color: #ffffff;
-}
-
-
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
@@ -153,12 +157,6 @@ a:focus{
     bottom: 0;
 }
 
-.vimal-journey .h2-title{
-    text-align: center;
-    font-size: 32px;
-    font-weight: 400;
-    color: #ffffff;
-}
 .vimal-journey .head-para{
     text-align: center;
     font-size: 20px;
@@ -222,3 +220,117 @@ a:focus{
 .footer{
     background-color: #0c56a1;
 }
+
+.footer .about-us-col .footer-logo img{
+    width: auto;
+    height: 100px;
+}
+
+.footer .about-us-col .text-content .h3-title{
+    font-size: 32px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 5px 0;
+}
+.footer .about-us-col .text-content .para{
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.footer .footer-quick-links ul{
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer .footer-quick-links ul li{
+    margin: 5px 0;
+}
+
+.footer .footer-quick-links ul li a{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.footer input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #094584;
+    border-radius: 10px;
+    resize: vertical;
+    color: #fff;
+}
+
+.footer .submit-button .btn-effect{
+    padding: 10px 30px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    color: #0c56a1;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    background:#0c56a1;
+    overflow: hidden;
+}
+
+.footer .submit-button .btn-effect::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 8px;
+    background: #ffffff;
+    z-index: -1;
+    animation: loadingWave 4s linear;
+}
+
+@keyframes loadingWave{
+   0%{
+    clip-path: polygon(0% 41%, 17% 51%, 46% 46%, 71% 49%, 88% 39%, 99% 47%, 100% 100%, 0% 100%);
+   }
+   20%{
+
+   }
+   30%{
+
+   }
+   40%{
+
+   }
+   60%{
+
+   }
+   80%{
+
+   }
+   100%{
+    
+   }
+}
+
+.footer .social-icon{
+    margin-top: 10px;
+}
+
+.footer .social-icon ul{
+    display: flex;
+    gap: 16px;
+    padding: 0;
+}
+
+.footer .social-icon ul li a img{
+    height: 30px;
+    width: 30px;
+}
+
+.footer input::placeholder{
+    color: #5791cc;
+}
+
+
+
