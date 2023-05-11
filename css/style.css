@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+html,body{overflow-x:hidden;}
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +13,11 @@ body{
     overflow-x: hidden;
     -webkit-text-stroke:1px transparent;
 }
-ul li{
+ol,ul{
+    line-height:1.4;
+    margin-bottom:15px;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 a{
@@ -159,6 +163,46 @@ a:focus{
 .product-section{
     background: #0c56a1;
 }
+.pro-sld-main {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+	background: #ed5839;
+	border-radius: 20px;
+    position: relative;
+}
+.pro-sld-main.red{
+    background:#ed5839;
+}
+.pro-sld-main.ylw{
+    background:#fbef4d;
+}
+.pro-sld-main.grn{
+    background:#21b354;
+}
+.pro-sld-main img {
+	max-width: 173px;
+	height: auto;
+	margin: 0 auto;
+}
+.pro-sld-main a {
+	font-size: 22px;
+	color: #fff;
+	max-width: 170px;
+	display: inline-block;
+	line-height: 1.4;
+	margin-top: 25px;
+}
+.pro-sld-main.ylw a{
+    color: #0c54a0;
+}
+.pro-sld-main a:hover{
+    color:#fbef4d;
+}
+.pro-sld-main.ylw a:hover {
+	color: #ed5839;
+}
 .product-section .h2-title{
     text-align: center;
     font-size: 36px;
@@ -202,7 +246,6 @@ a:focus{
 }
 .vimal-journey .head-para{
     text-align: center;
-    font-size: 20px;
     font-weight: 400;
     color: #ffffff;
 }
@@ -354,6 +397,7 @@ a:focus{
 .footer input::placeholder{
     color: #5791cc;
 }
+
 /* Homepage Product Slider CSS Starts */
 .pro-sld-main {
 	display: inline-block;
@@ -365,3 +409,4 @@ a:focus{
 	height: auto;
 	margin: 0 auto;
 }
+
