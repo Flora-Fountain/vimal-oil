@@ -141,20 +141,132 @@ a:focus{
     text-align: center;
     color: #0c54a0;
 }
-.health-section .owl-carousel .item {
-  
+.pro-vdo-sld.owl-carousel .item {
     padding: 1rem;
     opacity: 0.4;
     transition: .4s ease all;
     margin: 0 20px;
     transform: scale(0.9);
 }
-.health-section .owl-carousel .active .item{
+.pro-vdo-sld.owl-carousel .active .item{
     opacity: 1;
     transform: scale(1);
 }
-.video-sld{
-    height: 100%;
+.pro-vdo-sld .owl-item {
+	position: relative;
+    z-index: -1;
+}
+.pro-vdo-sld .owl-item.active{
+	z-index: 0;
+}
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	border: 0;
+	background: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50px;
+	padding: 10px;
+	transition: 0.3s;
+}
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span {
+	display: inline-block;
+	width: 100%;
+	position: relative;
+}
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span {
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	position: relative;
+}
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span svg {
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	transition: 0.3s;
+	fill: #201b12;
+}
+.pro-vdo-sld .video-sld img {
+	height: auto;
+	border-radius: 20px;
+}
+/* Video modal CSS */
+.wl-modal {
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-transition: all 0.35s ease-in;
+	-ms-transition: all 0.35s ease-in;
+	transition: all 0.35s ease-in;
+	visibility: hidden;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.wl-modal.wl-modal-open {
+    visibility: visible;
+    opacity: 1;
+}
+.wl-modal-content {
+    position: absolute;
+    background-color: #fefefe;
+    max-width: 500px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.wl-modal-lg .wl-modal-content {
+    max-width: 800px;
+}
+.wl-video-modal .wl-modal-content {
+    border: 0;
+    border-radius: 0;
+}
+.wl-video-modal .wl-modal-content {
+    z-index: 1;
+    background: none;
+}
+.wl-video-modal .wl-modal-content .wl-m-close {
+    position: absolute;
+    right: 0;
+    top: -40px;
+    color: #fff;
+    opacity: 1;
+    z-index: 1;
+    text-shadow: none;
+    font-size: 2em;
+    cursor: pointer;
+    background: #d13f81;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    text-align: center;
+}
+.wl-video-modal .wl-modal-content .wl-modal-body {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+.wl-video-modal .wl-modal-content video {
+    width: 100%;
+    float: left;
 }
 
 
@@ -208,6 +320,9 @@ a:focus{
     font-size: 36px;
     font-weight: 400;
     color: #ffffff;
+}
+.home-prod-sldr .owl-nav {
+    display: none;
 }
 
 .product-section .submit-button .btn-effect{
