@@ -132,6 +132,15 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+.health-section .h2-title{
+    color: #0c54a0;
+}
+.health-section p{
+    text-align: center;
+    color: #0c54a0;
+}
+
+
 /* module-4 product section css code  */
 .product-section{
     background: #0c56a1;
