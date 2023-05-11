@@ -106,7 +106,13 @@ a:focus{
     background-color: #0c56a1;
 }
 .hero-banner::before{
-    content: url();
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 50px solid #ffffff;
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -272,45 +278,8 @@ a:focus{
     font-size: 20px;
     font-weight: 500;
     position: relative;
-    background:#0c56a1;
+    background:#ffffff;
     overflow: hidden;
-}
-
-.footer .submit-button .btn-effect::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    border-radius: 8px;
-    background: #ffffff;
-    z-index: -1;
-    animation: loadingWave 4s linear;
-}
-
-@keyframes loadingWave{
-   0%{
-    clip-path: polygon(0% 41%, 17% 51%, 46% 46%, 71% 49%, 88% 39%, 99% 47%, 100% 100%, 0% 100%);
-   }
-   20%{
-
-   }
-   30%{
-
-   }
-   40%{
-
-   }
-   60%{
-
-   }
-   80%{
-
-   }
-   100%{
-    
-   }
 }
 
 .footer .social-icon{
