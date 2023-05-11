@@ -13,11 +13,9 @@ body{
     overflow-x: hidden;
     -webkit-text-stroke:1px transparent;
 }
-
 ul li{
     list-style: none;
 }
-
 a{
     text-decoration: none !important;
     -webkit-transition: 0.3s;
@@ -59,7 +57,7 @@ a:focus{
 	font-weight: 400;
 	color: #ffffff;
 	margin-bottom: 20px;
-	padding-bottom: 25px;
+	padding-bottom: 0px;
 	margin-top: 20px;
 	line-height: 1.4;
 }
@@ -139,6 +137,22 @@ a:focus{
     text-align: center;
     color: #0c54a0;
 }
+.health-section .owl-carousel .item {
+  
+    padding: 1rem;
+    opacity: 0.4;
+    transition: .4s ease all;
+    margin: 0 20px;
+    transform: scale(0.9);
+}
+.health-section .owl-carousel .active .item{
+    opacity: 1;
+    transform: scale(1);
+}
+.video-sld{
+    height: 100%;
+}
+
 
 
 /* module-4 product section css code  */
@@ -151,6 +165,8 @@ a:focus{
     font-weight: 400;
     color: #ffffff;
 }
+
+
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
@@ -344,7 +360,7 @@ a:focus{
 	width: 100%;
 	text-align: center;
 }
-.pro-sld-main img {
+.pro-sld-main img{
 	max-width: 173px;
 	height: auto;
 	margin: 0 auto;
