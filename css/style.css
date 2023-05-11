@@ -209,6 +209,9 @@ a:focus{
     font-weight: 400;
     color: #ffffff;
 }
+.home-prod-sldr .owl-nav {
+    display: none;
+}
 
 
 /* module-5 nrt-section css code  */
