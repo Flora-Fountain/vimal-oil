@@ -104,15 +104,19 @@ a:focus{
 /* module-2 hero banner css code  */
 .hero-banner{
     background-color: #0c56a1;
+    text-align: center;
 }
 .hero-banner::before{
-    content: "";
+    content: '';
     width: 0;
     height: 0;
-    border-bottom: 50px solid #ffffff;
+    border-bottom: 50px solid red;
     border-left: 100vw solid transparent;
     position: absolute;
     bottom: 0;
+}
+.hero-banner::after{
+    
 }
 
 
