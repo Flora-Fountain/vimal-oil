@@ -4,9 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
-
 body{
     font-family: 'Comme', sans-serif;
     font-size: 18px;
@@ -16,6 +14,9 @@ body{
     -webkit-text-stroke:1px transparent;
 }
 
+ul li{
+    list-style: none;
+}
 
 a{
     text-decoration: none !important;
@@ -46,14 +47,22 @@ a:focus{
     padding: 30px 0px;
     position: relative;
 }
-
 .h2-title{
     text-align: center;
     font-size: 36px;
     font-weight: 400;
     color: #ffffff;
 }
-
+.h2-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 20px;
+	padding-bottom: 25px;
+	margin-top: 20px;
+	line-height: 1.4;
+}
 /*  module-1 header css code */
 .header{
     width: 100%;
@@ -66,19 +75,16 @@ a:focus{
     z-index: 9999;
     background: rgba(255,255,255,0);
 }
-
 .nav-menu{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-
 .nav-menu .logo img{
     width: auto;
     height: 90px;
 }
-
 .nav-menu .menu-btn{
     width: 50px;
     height: auto;
@@ -99,8 +105,6 @@ a:focus{
 .nav-menu .menu-btn:hover span {
 	background: #ffdd00;
 }
-
-
 /* module-2 hero banner css code  */
 .hero-banner{
     background-color: #0c56a1;
@@ -118,9 +122,6 @@ a:focus{
 .hero-banner::after{
     
 }
-
-
-
 /* module-3 health-section css code  */
 .health-section::before{
     content: '';
@@ -139,16 +140,21 @@ a:focus{
     color: #0c54a0;
 }
 
+
 /* module-4 product section css code  */
 .product-section{
     background: #0c56a1;
 }
-
+.product-section .h2-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
 }
-
 .nrt-section::before{
     content: '';
     width: 0;
@@ -158,12 +164,10 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-
 /* module-6 journey section css code  */
 .vimal-journey{
     background-color: #0c56a1;
 }
-
 .vimal-journey::before{
     content: '';
     width: 0;
@@ -174,24 +178,26 @@ a:focus{
     bottom: 0;
 }
 
+.vimal-journey .h2-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
 .vimal-journey .head-para{
     text-align: center;
     font-size: 20px;
     font-weight: 400;
     color: #ffffff;
 }
-
 /* module-7 oil-quiz section css  */
 .oil-quiz{
     background-color: #ffffff;
 }
-
-
 /* module-8 recipe-section css code  */
 .recipe-section{
     background-color: #fff;
 }
-
 .recipe-section::before{
     content: '';
     width: 0;
@@ -201,12 +207,10 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-
 /* module-9 social-presence css code */
 .social-presence{
     background-color: #0c56a1;
 }
-
 .social-presence::before{
     content: '';
     width: 0;
@@ -216,13 +220,10 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-
-
 /* module-10 form-section css code  */
 .form-section{
     background-color: #ffffff;
 }
-
 .form-section::before{
     content: '';
     width: 0;
@@ -232,17 +233,48 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+.form-section .h2-title{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+    margin: 8px 0;
+}
+
+.form-section .form-part{
+    padding: 80px 20px;
+}
+
+.form-section .form{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+}
+
+.form-section .form .form-group{
+ margin: 12px 0;   
+}
+
+.form-section .btn-effect{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    background:#0c56a1;
+    overflow: hidden;
+}
 
 /* module-11 footer section css code */
 .footer{
     background-color: #0c56a1;
 }
-
 .footer .about-us-col .footer-logo img{
     width: auto;
     height: 100px;
 }
-
 .footer .about-us-col .text-content .h3-title{
     font-size: 32px;
     font-weight: 500;
@@ -254,22 +286,18 @@ a:focus{
     font-weight: 300;
     color: #ffffff;
 }
-
 .footer .footer-quick-links ul{
     padding: 0;
     margin: 20px 0;
 }
-
 .footer .footer-quick-links ul li{
     margin: 5px 0;
 }
-
 .footer .footer-quick-links ul li a{
     font-size: 20px;
     color: #ffffff;
     font-weight: 400;
 }
-
 .footer input[type=email] {
     width: 100%;
     padding: 12px;
@@ -279,7 +307,6 @@ a:focus{
     resize: vertical;
     color: #fff;
 }
-
 .footer .submit-button .btn-effect{
     padding: 10px 30px;
     margin-top: 18px;
@@ -292,26 +319,33 @@ a:focus{
     background:#ffffff;
     overflow: hidden;
 }
-  
-
 .footer .social-icon{
-    margin-top: 10px;
+    margin-top: 20px;
 }
-
 .footer .social-icon ul{
-    display: flex;
-    gap: 16px;
+    display: inline-block;
     padding: 0;
 }
-
+.footer .social-icon ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 0px 6px;
+}
 .footer .social-icon ul li a img{
     height: 30px;
     width: 30px;
 }
-
 .footer input::placeholder{
     color: #5791cc;
 }
-
-
-
+/* Homepage Product Slider CSS Starts */
+.pro-sld-main {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.pro-sld-main img {
+	max-width: 173px;
+	height: auto;
+	margin: 0 auto;
+}
