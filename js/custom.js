@@ -3,7 +3,7 @@ $(document).ready(function(){
         loop: true,
         responsiveClass: true,
         nav: true,
-        margin: 0,    
+        margin: 15,    
         autoplayTimeout: 4000,
         smartSpeed: 400,
         center: true,
