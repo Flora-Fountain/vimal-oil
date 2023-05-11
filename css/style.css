@@ -321,6 +321,9 @@ a:focus{
     font-weight: 400;
     color: #ffffff;
 }
+.home-prod-sldr .owl-nav {
+    display: none;
+}
 
 
 /* module-5 nrt-section css code  */
@@ -485,11 +488,75 @@ a:focus{
     border-radius: 12px;
     color: #0c56a1;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: bold;
     position: relative;
     background:#ffffff;
     overflow: hidden;
+    animation: wave 4s ease-in-out infinite;
 }
+
+
+/* @keyframes wave {
+    0%,
+    100% {
+        clip-path: polygon(
+      0% 46%,
+      17% 45%,
+      34% 50%,
+      56% 61%,
+      69% 62%,
+      86% 60%,
+      100% 51%,
+      100% 100%,
+      0% 100%
+    );
+    }
+    50% {
+    clip-path: polygon(
+        0% 59%,
+        16% 64%,
+        33% 65%,
+        52% 61%,
+        70% 52%,
+        85% 47%,
+        100% 48%,
+        100% 100%,
+        0% 100%
+    ); 
+    }
+} */
+
+@keyframes wave {
+    0%,
+    100% {
+        clip-path: polygon(
+      0% 17%,
+      17% 16%,
+      34% 22%,
+      56% 32%,
+      69% 33%,
+      86% 31%,
+      100% 22%,
+      100% 100%,
+      0% 100%
+    );
+    }
+    50% {
+    clip-path: polygon(
+        0% 30%,
+        16% 35%,
+        33% 36%,
+        52% 32%,
+        70% 23%,
+        85% 18%,
+        100% 19%,
+        100% 100%,
+        0% 100%
+    ); 
+    }
+}
+
+
 .footer .social-icon{
     margin-top: 20px;
 }
