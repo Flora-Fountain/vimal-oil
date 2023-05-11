@@ -210,6 +210,20 @@ a:focus{
     color: #ffffff;
 }
 
+.product-section .submit-button .btn-effect{
+    padding: 10px 50px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    color: #0c56a1;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background:#ffffff;
+    overflow: hidden;
+    animation: wave 4s ease-in-out infinite;
+}
+
 
 /* module-5 nrt-section css code  */
 .nrt-section{
