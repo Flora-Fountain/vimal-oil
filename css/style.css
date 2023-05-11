@@ -13,6 +13,11 @@ body{
     overflow-x: hidden;
     -webkit-text-stroke:1px transparent;
 }
+
+ul li{
+    list-style: none;
+}
+
 a{
     text-decoration: none !important;
     -webkit-transition: 0.3s;
@@ -41,6 +46,12 @@ a:focus{
 .default-section{
     padding: 30px 0px;
     position: relative;
+}
+.h2-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
 }
 .h2-title {
 	text-align: center;
@@ -121,6 +132,15 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+.health-section .h2-title{
+    color: #0c54a0;
+}
+.health-section p{
+    text-align: center;
+    color: #0c54a0;
+}
+
+
 /* module-4 product section css code  */
 .product-section{
     background: #0c56a1;
@@ -165,6 +185,12 @@ a:focus{
 .pro-sld-main.ylw a:hover {
 	color: #ed5839;
 }
+.product-section .h2-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
@@ -191,9 +217,15 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+
+.vimal-journey .h2-title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
 .vimal-journey .head-para{
     text-align: center;
-    font-size: 20px;
     font-weight: 400;
     color: #ffffff;
 }
@@ -240,6 +272,40 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+.form-section .h2-title{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+    margin: 8px 0;
+}
+
+.form-section .form-part{
+    padding: 80px 20px;
+}
+
+.form-section .form{
+    padding: 20px 30px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+}
+
+.form-section .form .form-group{
+ margin: 12px 0;   
+}
+
+.form-section .btn-effect{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    background:#0c56a1;
+    overflow: hidden;
+}
+
 /* module-11 footer section css code */
 .footer{
     background-color: #0c56a1;
@@ -293,12 +359,16 @@ a:focus{
     overflow: hidden;
 }
 .footer .social-icon{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .footer .social-icon ul{
-    display: flex;
-    gap: 16px;
+    display: inline-block;
     padding: 0;
+}
+.footer .social-icon ul li{
+    display: inline-block;
+    padding: 0;
+    margin: 0px 6px;
 }
 .footer .social-icon ul li a img{
     height: 30px;
