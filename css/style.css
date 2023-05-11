@@ -47,12 +47,21 @@ a:focus{
     padding: 30px 0px;
     position: relative;
 }
-
 .h2-title{
     text-align: center;
     font-size: 36px;
     font-weight: 400;
     color: #ffffff;
+}
+.h2-title {
+	text-align: center;
+	font-size: 36px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-bottom: 20px;
+	padding-bottom: 25px;
+	margin-top: 20px;
+	line-height: 1.4;
 }
 /*  module-1 header css code */
 .header{
@@ -319,4 +328,15 @@ a:focus{
 }
 .footer input::placeholder{
     color: #5791cc;
+}
+/* Homepage Product Slider CSS Starts */
+.pro-sld-main {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.pro-sld-main img {
+	max-width: 173px;
+	height: auto;
+	margin: 0 auto;
 }
