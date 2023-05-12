@@ -187,11 +187,6 @@ a:focus{
 	padding: 10px;
 	transition: 0.3s;
 }
-/* .pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span {
-	display: inline-block;
-	width: 100%;
-	position: relative;
-} */
 .pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span, .recipe-section .cook-video .wl-modal-btn.video-play-btn span {
 	display: inline-block;
 	width: 26px;
@@ -283,6 +278,9 @@ a:focus{
 .product-section{
     background: #0c56a1;
 }
+.home-prod-sldr{
+    margin-top: 20px;
+}
 .pro-sld-main {
 	display: inline-block;
 	width: 100%;
@@ -338,7 +336,6 @@ a:focus{
     border-radius: 15px;
     color: #ffffff;
     font-size: 20px;
-    /* font-weight: 500; */
     position: relative;
     background:#0c56a1;
     overflow: hidden;
@@ -462,22 +459,15 @@ a:focus{
     color: #000000;
     margin: 8px 0;
 }
-
-.form-section .form-part{
-    padding: 80px 20px;
-}
-
 .form-section .form{
     padding: 20px 30px;
     border: none;
     border-radius: 12px;
     box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
 }
-
 .form-section .form .form-group{
  margin: 12px 0;   
 }
-
 .form-section .btn-effect{
     padding: 10px 40px;
     border: none;
