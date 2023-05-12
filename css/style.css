@@ -13,6 +13,10 @@ body{
     overflow-x: hidden;
     -webkit-text-stroke:1px transparent;
 }
+p{
+    font-size: 20px;
+    text-align: center;
+}
 ol,ul{
     line-height:1.4;
     margin-bottom:15px;
@@ -55,14 +59,7 @@ a:focus{
     font-weight: 400;
     color: #ffffff;
 }
-.h2-title {
-	text-align: center;
-	font-size: 36px;
-	font-weight: 400;
-	color: #ffffff;
-	margin-bottom: 20px;
-	line-height: 1.4;
-}
+
 /*  module-1 header css code */
 .header{
     width: 100%;
@@ -119,10 +116,23 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-.hero-banner::after{
-    
+.h1-title h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #ffdd00;
+}
+.carousel .carousel-item img {
+    display: block;
+    width: 100%;
+}
+.hero-banner-left img {
+    height: auto;
+    margin: 0 auto;
 }
 /* module-3 health-section css code  */
+.health-section{
+    background-color: #fff;
+}
 .health-section::before{
     content: '';
     width: 0;
@@ -138,6 +148,9 @@ a:focus{
 .health-section p{
     text-align: center;
     color: #0c54a0;
+}
+.health-section .owl-carousel .owl-dots{
+    display: none;
 }
 .pro-vdo-sld.owl-carousel .item {
     padding: 1rem;
@@ -157,7 +170,7 @@ a:focus{
 .pro-vdo-sld .owl-item.active{
 	z-index: 0;
 }
-.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn {
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn, .recipe-section .cook-video .wl-modal-btn.video-play-btn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -174,18 +187,18 @@ a:focus{
 	padding: 10px;
 	transition: 0.3s;
 }
-.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span {
+/* .pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span {
 	display: inline-block;
 	width: 100%;
 	position: relative;
-}
-.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span {
+} */
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span, .recipe-section .cook-video .wl-modal-btn.video-play-btn span {
 	display: inline-block;
 	width: 26px;
 	height: 26px;
 	position: relative;
 }
-.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span svg {
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn span svg, .recipe-section .cook-video .wl-modal-btn.video-play-btn span svg {
 	position: absolute;
 	width: 100%;
 	left: 50%;
@@ -266,9 +279,6 @@ a:focus{
     width: 100%;
     float: left;
 }
-
-
-
 /* module-4 product section css code  */
 .product-section{
     background: #0c56a1;
@@ -322,22 +332,19 @@ a:focus{
 .home-prod-sldr .owl-nav {
     display: none;
 }
-
-.product-section .submit-button .btn-effect{
+.submit-button .btn-effect{
     padding: 10px 50px;
     margin-top: 18px;
     border: none;
-    border-radius: 12px;
+    border-radius: 15px;
     color: #0c56a1;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 500;
     position: relative;
     background:#ffffff;
     overflow: hidden;
     animation: wave 4s ease-in-out infinite;
 }
-
-
 /* module-5 nrt-section css code  */
 .nrt-section{
     background-color: #ffffff;
@@ -350,6 +357,17 @@ a:focus{
     border-left: 100vw solid transparent;
     position: absolute;
     bottom: 0;
+}
+.nrt-section .h2-title{
+    color: #f8e7aa;
+}
+.nrt-section  .h1-title h1, .recipe-section .h1-title h1{
+    text-transform: uppercase;
+    color: #0c54a0;
+}
+.nrt-section .submit-button .btn-effect, .health-section .submit-button .btn-effect, .oil-quiz .submit-button .btn-effect{
+    background: #0c56a1;
+    color: #fff;
 }
 /* module-6 journey section css code  */
 .vimal-journey{
@@ -364,21 +382,25 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-
 .vimal-journey .h2-title{
-    text-align: center;
-    font-size: 36px;
-    font-weight: 400;
     color: #ffffff;
 }
-.vimal-journey .head-para{
+.head-para{
     text-align: center;
-    font-weight: 400;
+    font-weight: 600;
     color: #ffffff;
 }
 /* module-7 oil-quiz section css  */
 .oil-quiz{
     background-color: #ffffff;
+}
+.oil-quiz .h2-title, .oil-quiz p{
+    color: #0c54a0;
+}
+.oil-quiz-left img{
+    display: block;
+    height: auto;
+    margin: 0 auto;
 }
 /* module-8 recipe-section css code  */
 .recipe-section{
@@ -393,6 +415,20 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+.recipe-section .head-para{
+    color: #0c54a0;
+    margin-bottom: 40px;
+}
+.cook-video img{
+    width: 100%;
+}
+/* .cook-video{
+    background-image: url("../images/cook-video.png");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100vh;
+} */
 /* module-9 social-presence css code */
 .social-presence{
     background-color: #0c56a1;
@@ -493,20 +529,6 @@ a:focus{
     resize: vertical;
     color: #fff;
 }
-.footer .submit-button .btn-effect{
-    padding: 10px 30px;
-    margin-top: 18px;
-    border: none;
-    border-radius: 12px;
-    color: #0c56a1;
-    font-size: 20px;
-    font-weight: bold;
-    position: relative;
-    background:#ffffff;
-    overflow: hidden;
-    animation: wave 4s ease-in-out infinite;
-}
-
 
 /* @keyframes wave {
     0%,
