@@ -46,7 +46,7 @@ a:focus{
     border:0 !important;
 }
 .default-section{
-    padding: 30px 0px;
+    padding: 50px 0px;
     position: relative;
 }
 .h2-title{
@@ -61,8 +61,6 @@ a:focus{
 	font-weight: 400;
 	color: #ffffff;
 	margin-bottom: 20px;
-	padding-bottom: 0px;
-	margin-top: 20px;
 	line-height: 1.4;
 }
 /*  module-1 header css code */
@@ -168,11 +166,10 @@ a:focus{
 	border: 0;
 	background: #fff;
 	position: absolute;
-	left: 0;
+	left: 50%;
 	right: 0;
-	margin: 0 auto;
 	top: 50%;
-	transform: translateY(-50%);
+	transform: translate(-50%,-50%);
 	border-radius: 50px;
 	padding: 10px;
 	transition: 0.3s;
@@ -245,7 +242,7 @@ a:focus{
 }
 .wl-video-modal .wl-modal-content .wl-m-close {
     position: absolute;
-    right: 0;
+    right: -25px;
     top: -40px;
     color: #fff;
     opacity: 1;
@@ -253,10 +250,11 @@ a:focus{
     text-shadow: none;
     font-size: 2em;
     cursor: pointer;
-    background: #d13f81;
+    border-radius: 50%;
+    background: #073461;
     width: 40px;
     height: 40px;
-    line-height: 32px;
+    line-height: 36px;
     text-align: center;
 }
 .wl-video-modal .wl-modal-content .wl-modal-body {

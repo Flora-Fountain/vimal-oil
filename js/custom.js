@@ -26,11 +26,12 @@ $(document).ready(function(){
         loop:true,
         items:1,
         lazyLoad: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
-        margin: -480
+        margin: -320,
+        
     })
     
        
