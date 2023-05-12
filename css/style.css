@@ -174,8 +174,8 @@ a:focus{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 60px;
-	height: 60px;
+	width: 50px;
+	height: 50px;
 	border: 0;
 	background: #fff;
 	position: absolute;
@@ -333,15 +333,14 @@ a:focus{
     display: none;
 }
 .submit-button .btn-effect{
-    padding: 10px 50px;
-    margin-top: 18px;
+    padding: 10px 20px;
     border: none;
     border-radius: 15px;
-    color: #0c56a1;
+    color: #ffffff;
     font-size: 20px;
-    font-weight: 500;
+    /* font-weight: 500; */
     position: relative;
-    background:#ffffff;
+    background:#0c56a1;
     overflow: hidden;
     animation: wave 4s ease-in-out infinite;
 }
@@ -365,9 +364,9 @@ a:focus{
     text-transform: uppercase;
     color: #0c54a0;
 }
-.nrt-section .submit-button .btn-effect, .health-section .submit-button .btn-effect, .oil-quiz .submit-button .btn-effect{
-    background: #0c56a1;
-    color: #fff;
+.product-section .submit-button .btn-effect, .footer .submit-button .btn-effect{
+    background: #ffffff;
+    color: #0c56a1;
 }
 /* module-6 journey section css code  */
 .vimal-journey{
@@ -402,6 +401,11 @@ a:focus{
     height: auto;
     margin: 0 auto;
 }
+.h4-title{
+    text-align: center;
+    color: #0c54a0;
+    margin-top: 20px;
+}
 /* module-8 recipe-section css code  */
 .recipe-section{
     background-color: #fff;
@@ -421,14 +425,11 @@ a:focus{
 }
 .cook-video img{
     width: 100%;
+    border-radius: 10px;
 }
-/* .cook-video{
-    background-image: url("../images/cook-video.png");
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 100vh;
-} */
+.recipe-section .cook-video{
+    position: relative;
+}
 /* module-9 social-presence css code */
 .social-presence{
     background-color: #0c56a1;
