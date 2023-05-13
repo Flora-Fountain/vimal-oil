@@ -8,7 +8,7 @@ html,body{overflow-x:hidden;} */
 body{
     /* font-family: 'Comme', sans-serif; */
     font-family: 'Rimouski', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight:400;
     line-break: 1.3;
     overflow-x: hidden;
@@ -58,7 +58,7 @@ a:focus{
     text-align: center;
     text-transform: uppercase;
     color: #0c54a0;
-    font-size: 40px;
+    font-size: 50px;
 }
 .h2-title{
     text-align: center;
@@ -97,7 +97,7 @@ a:focus{
     width: 40px;
     height: 4px;
     display: block;
-    background-color: #212121;
+    background-color: #fff;
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     transition: 0.3s;
@@ -329,13 +329,15 @@ a:focus{
     display: none;
 }
 .submit-button .btn-effect{
-    padding: 10px 20px;
+    width: 100%;
+    max-width: 180px;
+    padding: 10px 0;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     color: #ffffff;
     font-size: 20px;
     position: relative;
-    background:#0c56a1;
+    background:#0c54a0;
     overflow: hidden;
     animation: wave 4s ease-in-out infinite;
 }
@@ -358,6 +360,24 @@ a:focus{
 .product-section .submit-button .btn-effect, .footer .submit-button .btn-effect{
     background: #ffffff;
     color: #0c56a1;
+}
+.nrt-section .animate-svg svg{
+    fill: none;
+}
+.nrt-section p{
+    color: #0c54a0;
+}
+.animate-text{
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+}
+.animate-text span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0c54a0;
+    font-size: 40px;
 }
 /* module-6 journey section css code  */
 .vimal-journey{
@@ -465,8 +485,8 @@ a:focus{
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
     border-top: 16px solid #0a4380;
     right: 14px;
     top: 50%;
@@ -496,10 +516,13 @@ a:focus{
 	border-radius: 12px;
 	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
 	justify-content: center;
-	align-items: center;
+	align-items: end;
 	padding-bottom: 0;
 	max-width: 890px;
 	margin: 0 auto;
+}
+.form-part .form{
+    margin-bottom: 30px;
 }
 .form-part .form-image-part {
 	margin-right: 20px;
@@ -509,17 +532,6 @@ a:focus{
 }
 .form-section .form .form-group{
  margin: 12px 0;   
-}
-.form-section .btn-effect{
-    padding: 10px 40px;
-    border: none;
-    border-radius: 12px;
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 500;
-    position: relative;
-    background:#0c56a1;
-    overflow: hidden;
 }
 
 /* module-11 footer section css code */
