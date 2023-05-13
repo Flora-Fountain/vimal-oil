@@ -453,11 +453,23 @@ a:focus{
     color: #000000;
     margin: 8px 0;
 }
-.form-section .form{
-    padding: 20px 30px;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+.form-part {
+	display: flex;
+	padding: 20px 30px;
+	border: none;
+	border-radius: 12px;
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.2);
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 0;
+	max-width: 890px;
+	margin: 0 auto;
+}
+.form-part .form-image-part {
+	margin-right: 20px;
+}
+.form-part .form-image-part img {
+	max-width: 230px;
 }
 .form-section .form .form-group{
  margin: 12px 0;   
