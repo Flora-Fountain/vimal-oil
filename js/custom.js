@@ -1,4 +1,17 @@
 $(document).ready(function(){
+    $('.banner-slider').owlCarousel({
+        loop: true,
+        autoplay: true,
+        responsiveClass: true,
+        dots: true,
+        margin: 15,
+        autoplayTimeout: 5000,
+        smartSpeed: 400,
+        items:1,
+        //animateOut: 'slideOutDown',
+        //animateIn: 'flipInX',
+        responsive: {}
+    });
     $('.home-prod-sldr').owlCarousel({
         loop: true,
         autoplay: true,
@@ -34,8 +47,6 @@ $(document).ready(function(){
         margin: -320,
         
     })
-    
-       
 });
 // Sticky Header JS Starts
 if (jQuery(window).width() > 0) {
@@ -122,7 +133,3 @@ if ($("#videoPlaypopup").length > 0) {
         });
     });
 }
-
-$('.carousel').carousel({
-    interval: false,
-  });

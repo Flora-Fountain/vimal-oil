@@ -2,8 +2,72 @@
 @media screen and (max-width:1599px) {
     
 }
+@media screen and (max-width:1499px){
+    .hero-banner .banner-left img {
+        max-width: 480px;
+    }
+    .hero-banner .banner-right .h1-title {
+        font-size: 90px;
+    }
+    .hero-banner .banner-right .h1-title span {
+        font-size: 44px;
+    }
+    .hash-sec {
+        margin-bottom: 80px;
+    }
+    .hero-banner::after {
+        width: 800px;
+        height: 800px;
+    }
+}
 @media screen and (max-width:1399px) {
-    
+    .hero-banner .banner-left {
+        margin-top: 40px;
+    }
+    .hero-banner .banner-left img {
+        max-width: 400px;
+    }
+    .hero-banner .banner-right .h1-title {
+        font-size: 80px;
+    }
+    .hero-banner .banner-right .h1-title span {
+        font-size: 40px;
+    }
+    .hero-banner .banner-oil-cont .bnr-oil img {
+        max-width: 120px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(1) {
+        width: 130px;
+        height: 130px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(2) {
+        width: 40px;
+        height: 40px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(3) {
+        width: 80px;
+        height: 80px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(4) {
+        width: 40px;
+        height: 40px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(5) {
+        width: 100px;
+        height: 100px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(6) {
+        width: 30px;
+        height: 30px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(7) {
+        width: 100px;
+        height: 100px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(8) {
+        width: 150px;
+        height: 150px;
+    }
 }
 @media screen and (max-width:1299px) {
     
