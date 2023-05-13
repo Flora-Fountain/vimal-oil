@@ -14,7 +14,7 @@ body{
     overflow-x: hidden;
     -webkit-text-stroke:1px transparent;
 }
-h1,h2,h2{
+h1,h2,h3,h4{
     font-family: 'Rimouski', sans-serif;
 }
 p{
@@ -436,6 +436,7 @@ a:focus{
 	display: inline-block;
 	line-height: 1.4;
 	margin-top: 25px;
+    font-family: 'Rimouski', sans-serif;
 }
 .pro-sld-main.ylw a{
     color: #0c54a0;
@@ -517,6 +518,10 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
+.h1-title span{
+    display: block;
+    font-size: 20px;
+}
 .vimal-journey .h2-title{
     color: #ffffff;
 }
@@ -546,6 +551,11 @@ a:focus{
 .recipe-section{
     background-color: #fff;
 }
+.recipe-section .h1-title{
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
 .recipe-section::before{
     content: '';
     width: 0;
