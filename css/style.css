@@ -441,6 +441,12 @@ a:focus{
 .form-section{
     background-color: #ffffff;
 }
+.form-control:focus {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+    background: #f1f1f1;
+}
 .form-control{
     border: 0;
     outline: none;
@@ -451,19 +457,21 @@ a:focus{
 .form-section .form .form-group select.form-select {
     --bs-form-select-bg-img: none;
 }
-.form-part .form {
+.form-section .form .state-select{
     position: relative;
 }
-.form-part .form .state-select::before{
+.form-section .form .state-select::before{
     content: "";
     position: absolute;
     width: 0;
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-top: 16px solid red;
+    border-top: 16px solid #0a4380;
     right: 14px;
     top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 
 }
 .form-section::before{
