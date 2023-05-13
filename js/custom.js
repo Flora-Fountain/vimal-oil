@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.home-prod-sldr').owlCarousel({
         loop: true,
+        autoplay: true,
         responsiveClass: true,
         nav: true,
         margin: 15,    
