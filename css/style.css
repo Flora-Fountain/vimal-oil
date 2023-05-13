@@ -54,10 +54,15 @@ a:focus{
     padding: 50px 0px;
     position: relative;
 }
+.h1-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #0c54a0;
+    font-size: 40px;
+}
 .h2-title{
     text-align: center;
     font-size: 36px;
-    font-weight: 400;
     color: #ffffff;
 }
 
@@ -116,11 +121,6 @@ a:focus{
     border-left: 100vw solid transparent;
     position: absolute;
     bottom: 0;
-}
-.h1-title h1{
-    font-size: 3rem;
-    text-align: center;
-    color: #ffdd00;
 }
 .carousel .carousel-item img {
     display: block;
@@ -322,12 +322,6 @@ a:focus{
 .pro-sld-main.ylw a:hover {
 	color: #ed5839;
 }
-.product-section .h2-title{
-    text-align: center;
-    font-size: 36px;
-    font-weight: 400;
-    color: #ffffff;
-}
 .home-prod-sldr .owl-nav {
     display: none;
 }
@@ -358,10 +352,6 @@ a:focus{
 .nrt-section .h2-title{
     color: #f8e7aa;
 }
-.nrt-section  .h1-title h1, .recipe-section .h1-title h1{
-    text-transform: uppercase;
-    color: #0c54a0;
-}
 .product-section .submit-button .btn-effect, .footer .submit-button .btn-effect{
     background: #ffffff;
     color: #0c56a1;
@@ -369,6 +359,9 @@ a:focus{
 /* module-6 journey section css code  */
 .vimal-journey{
     background-color: #0c56a1;
+}
+.vimal-journey .h1-title{
+    color: #ffffff;
 }
 .vimal-journey::before{
     content: '';
