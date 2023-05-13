@@ -122,3 +122,7 @@ if ($("#videoPlaypopup").length > 0) {
         });
     });
 }
+
+$('.carousel').carousel({
+    interval: false,
+  });
