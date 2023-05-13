@@ -143,7 +143,7 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-.health-section .h2-title{
+.health-section .h2-title, .form-section .form .h2-title{
     color: #0c54a0;
 }
 .health-section p{
@@ -437,6 +437,31 @@ a:focus{
 /* module-10 form-section css code  */
 .form-section{
     background-color: #ffffff;
+}
+.form-control{
+    border: 0;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #c3c3c3;
+    padding: 0.8rem 0.75rem;
+}
+.form-section .form .form-group select.form-select {
+    --bs-form-select-bg-img: none;
+}
+.form-part .form {
+    position: relative;
+}
+.form-part .form .state-select::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 16px solid red;
+    right: 14px;
+    top: 50%;
+
 }
 .form-section::before{
     content: '';
