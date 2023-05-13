@@ -171,7 +171,10 @@ a:focus{
 .pro-vdo-sld .owl-item.active{
 	z-index: 0;
 }
-.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn, .recipe-section .cook-video .wl-modal-btn.video-play-btn{
+.pro-vdo-sld .video-sld .wl-modal-btn.video-play-btn{
+    display: none;
+}
+.pro-vdo-sld .owl-item.active .video-sld .wl-modal-btn.video-play-btn, .recipe-section .cook-video .wl-modal-btn.video-play-btn{
 	display: flex;
 	justify-content: center;
 	align-items: center;
