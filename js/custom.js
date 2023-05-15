@@ -5,7 +5,7 @@ $(document).ready(function(){
         responsiveClass: true,
         dots: true,
         margin: 15,
-        autoplayTimeout: 5000,
+        autoplayTimeout: 50000,
         smartSpeed: 400,
         items:1,
         //animateOut: 'slideOutDown',
@@ -17,17 +17,25 @@ $(document).ready(function(){
         autoplay: true,
         responsiveClass: true,
         nav: true,
-        margin: 15,    
+        margin: 30,    
         autoplayTimeout: 4000,
         smartSpeed: 400,
         center: true,
-        navText: ['&#8592;', '&#8594;'],
         responsive: {
             0: {
-                items: 1,
+                items: 2,
+                margin: 10, 
             },
-            600: {
-                items: 5
+            480: {
+                items: 3,
+                margin: 10, 
+            },
+            575: {
+                items: 3,
+                margin: 10, 
+            },
+            991: {
+                items: 4
             },
             1200: {
                 items: 5
@@ -40,11 +48,25 @@ $(document).ready(function(){
         loop:true,
         items:1,
         lazyLoad: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000,
         autoplayTimeout: 5000,
         autoplayHoverPause: true,
         margin: -320,
+        responsive: {
+            991: {
+                margin: -80
+            },
+            992: {
+                margin: -130
+            },
+            1200: {
+                margin: -120
+            },
+            1300: {
+                margin: -220
+            }
+        }
         
     })
 });

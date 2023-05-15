@@ -68,57 +68,150 @@
         width: 150px;
         height: 150px;
     }
+    .leaf-sec::before,.leaf-sec::after {
+        width: 220px;
+        height: 210px;
+    }
+    .leaf-sec::before{
+        top: 50px;
+    }
+    
 }
 @media screen and (max-width:1299px) {
     
 }
 @media screen and (max-width:1199px) {
-    
+    .header {
+        padding: 10px 15px;
+    }
+    .hero-banner .banner-left img {
+        max-width: 300px;
+    }
+    .hero-banner .banner-right .h1-title {
+        font-size: 60px;
+    }
+    .hero-banner .banner-right .h1-title span {
+        font-size: 28px;
+    }
+    .header {
+        padding: 10px 15px;
+    }
+    .hash-sec {
+        margin-bottom: 40px;
+    }
+    .hash-sec span {
+        font-size: 20px;
+    }
+    .hero-banner .banner-oil-cont .bnr-oil img {
+        max-width: 80px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(1) {
+        width: 100px;
+        height: 100px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(2),.hero-banner .banner-left .banner-heart img:nth-child(4) {
+        width: 30px;
+        height: 30px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(3),.hero-banner .banner-left .banner-heart img:nth-child(7) {
+        width: 60px;
+        height: 60px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(7){
+        top: 430px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(5) {
+        width: 70px;
+        height: 70px;
+        left: 0;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(8) {
+        width: 80px;
+        height: 80px;
+        top: 350px;
+    }
+    .header .navbar {
+        padding: 0;
+    }
+    .hero-banner .owl-dots .owl-dot {
+        width: 18px;
+        height: 18px;
+    }
+    .hero-banner .owl-dots .owl-dot::before {
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 18px solid rgb(255, 255, 255);
+    }
+    .hero-banner .owl-dots .owl-dot.active::before {
+        border-bottom: 18px solid #0c54a0;
+    }
+    .sub-text {
+        max-width: 720px;
+    }
+    .sub-text p {
+        font-size: 24px;
+    }
+    .h2-title {
+        font-size: 35px;
+    }
+    .home-prod-sldr.owl-carousel {
+        padding: 0;
+    }
+    .pro-sld-main a {
+        font-size: 20px;
+    }
+    .pro-sld-main img {
+        max-width: 200px;
+    }
 }
 @media screen and (max-width:991px) {
-    
+    .pro-vdo-sld.owl-carousel {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .pro-vdo-sld.owl-carousel .owl-stage {
+        padding: 0;
+    }
 }
-@media screen and (max-width:764px) {
+@media screen and (max-width:767px) {
+    .hero-banner .banner-slider .item > .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-banner .banner-oil-cont.desk {
+        display: none;
+    }
+    .hero-banner .banner-oil-cont.mob {
+        display: block;
+    }
+    .hero-banner .banner-left {
+        display: inline-block;
+    }
+    .hero-banner .banner-oil-cont.mob {
+        display: flex;
+        position: absolute;
+        bottom: -10px;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 220px;
+    }
+    .hero-banner .banner-oil-cont .bnr-oil.center {
+        top: 10px;
+    }
+    .hero-banner .banner-oil-cont .bnr-oil.left {
+        margin-right: 30px;
+    }
     .h2-title{
         text-align: center;
         font-size: 24px;
         font-weight: 400;
         color: #ffffff;
-    }    
-}
-@media screen and (max-width:575px) {
-    
-}
-@media screen and (max-width:479px) {
-    
-}
-@media screen and (max-width:359px) {
-    
-}
-
-
-
-/* responsive css  */
-
-@media screen and (max-width:1599px) {
-    
-}
-@media screen and (max-width:1399px) {
-    
-}
-@media screen and (max-width:1299px) {
-    
-}
-@media screen and (max-width:1199px) {
-    
-}
-@media screen and (max-width:991px) {
-    
-}
-@media screen and (max-width:767px) {
+    }
     .header{
         width: 100%;
-        padding: 5px 0px;
+        padding: 15px 0px;
     } 
     .nav-menu .logo img{
         width: auto;
@@ -127,13 +220,109 @@
     .footer{
         text-align: center;
     }
+    .default-section {
+        padding: 30px 0px;
+    }
+    .banner-slider {
+        margin-top: 70px;
+    }
+    .hero-banner .banner-right .h1-title {
+        font-size: 50px;
+    }
+    .hero-banner .banner-right .h1-title span {
+        font-size: 24px;
+    }
+    .hero-banner .banner-left {
+        margin-top: 0;
+    }
+    .hero-banner.default-section{
+        padding-bottom: 0;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(1) {
+        width: 80px;
+        height: 80px;
+        top: 150px;
+        left: 50px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(2) {
+        left: 40px;
+        top: 210px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(3) {
+        top: 200px;
+        left: 80%;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(4) {
+        top: 260px;
+        left: 90%;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(5) {
+        left: 20px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(6) {
+        left: 80%;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(7) {
+        left: 70px;
+    }
+    .hero-banner .banner-left .banner-heart img:nth-child(8) {
+        top: 380px;
+        left: 80%;
+        animation-delay: 0.5s;
+    }
+    .hero-banner .owl-dots {
+        bottom: -23px;
+        margin: 0;
+    }
+    .hero-banner .owl-dots .owl-dot {
+        width: 14px;
+        height: 14px;
+    }
+    .hero-banner .owl-dots .owl-dot::before {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 12px solid rgb(255, 255, 255);
+        top: -8px;
+    }
+    .hero-banner .owl-dots .owl-dot.active::before {
+        border-bottom: 12px solid #0c54a0;
+    }
+    .hero-banner .owl-dots .owl-dot + .owl-dot {
+        margin-left: 15px;
+    }
+    .hero-banner .owl-dots .owl-dot.active::after {
+        width: 6px;
+        height: 6px;
+        box-shadow: 1px 1px 0 0 white;
+        right: 4px;
+        bottom: 4px;
+    }
+    .health-section.default-section {
+        padding: 70px 0;
+    }
+    .sub-text p {
+        font-size: 20px;
+    }
+    .pro-sld-main {
+        padding: 30px 10px 30px;
+    }
+    .sub-text {
+        padding: 0 15px;
+    }
 }
 @media screen and (max-width:575px) {
+    .pro-sld-main a {
+        font-size: 16px;
+    }
     
 }
 @media screen and (max-width:479px) {
-    
+    .pro-sld-main a {
+        font-size: 18px;
+    }
 }
 @media screen and (max-width:359px) {
-    
+    .pro-sld-main a {
+        font-size: 16px;
+    }
 }
