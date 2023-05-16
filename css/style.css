@@ -62,6 +62,13 @@ a:focus{
     color: #0c54a0;
     font-size: 50px;
 }
+.vimal-journey .h1-title {
+	text-align: center;
+	text-transform: uppercase;
+	color: #0c54a0;
+	font-size: 100px;
+	line-height: 1.1;
+}
 .h2-title {
 	display: inline-block;
 	width: 100%;
@@ -772,8 +779,9 @@ a:focus{
 .vimal-journey{
     background-color: #0c56a1;
 }
-.vimal-journey .h1-title{
-    color: #ffffff;
+.vimal-journey .h1-title {
+	color: #ffffff;
+	margin-bottom: 70px;
 }
 .vimal-journey::before{
     content: '';
@@ -784,9 +792,10 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-.h1-title span{
-    display: block;
-    font-size: 20px;
+.h1-title span {
+	display: block;
+	font-size: 40px;
+	text-transform: capitalize;
 }
 .vimal-journey .h2-title{
     color: #ffffff;
@@ -795,6 +804,81 @@ a:focus{
     text-align: center;
     font-weight: 600;
     color: #ffffff;
+}
+.jorney-main .nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.jorney-main .nav-pills .nav-link.active {
+	background: transparent;
+}
+.jorney-main .nav-pills .nav-link span {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+}
+.jorney-main .slide-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.jorney-main .slide-img img {
+	max-width: 400px;
+	border-radius: 20px;
+	border: 1px solid #fff;
+	filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.5));
+	transition: 0.3s;
+}
+.jorney-main .tab-content > .tab-pane {
+	transition: top 0.5s ease;
+	position: relative;
+}
+.jorney-main .tab-content > .active {
+	animation-name: contentMove;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+	transition-timing-function: ease-in;
+}
+@keyframes contentMove {
+    from {
+      top: 50px;
+      opacity: 0;
+    }
+
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+.jorney-main .nav-pills .nav-link {
+	width: 33.33%;
+}
+.jorney-main .nav-pills .nav-link img {
+	width: 80%;
+	height: auto;
+	border-radius: 50%;
+	background: #fbef4d;
+	transition: 0.3s;
+}
+.jorney-main .nav-pills .nav-link.active img {
+	padding: 5px;
+}
+.jorney-main .nav-pills .nav-link:nth-child(-n+3) {
+	margin-bottom: 30px;
+}
+.start {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+}
+.start p {
+	font-size: 27px;
+	color: #fff;
+	line-height: 1.4;
 }
 /* module-7 oil-quiz section css  */
 .oil-quiz{
