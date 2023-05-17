@@ -756,8 +756,8 @@ a:focus{
 	border-radius: 0 100% 100% 0 / 50%;
 	background: #fff;
 	width: 49%;
-	height: 725px;
-	z-index: 1;
+	height: calc(100% - 140px);
+	z-index: 0;
 	bottom: auto;
 	left: 0;
 	top: 140px;
@@ -772,12 +772,44 @@ a:focus{
 	width: 100%;
 	text-align: center;
 	max-width: 320px;
-	margin: 510px auto 0;
+	margin: 699px auto 0;
+	padding: 40px;
+	border-radius: 50%;
+	background: #0c56a1;
 }
 .nrt-logo img {
 	max-width: 300px;
+	width: 100%;
 }
-
+.white-sec {
+	position: relative;
+	z-index: 1;
+}
+.white-sec::before {
+	position: absolute;
+	content: '';
+	background: #fff;
+	width: 100%;
+	left: 0;
+	right: 0;
+	bottom: -50px;
+	height: 320px;
+	z-index: -1;
+}
+.white-sec::after {
+	position: absolute;
+	content: '';
+	background: url(../images/drops-bg.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	left: 0;
+	right: auto;
+	top: 80px;
+	bottom: 0;
+	width: 100vw;
+	height: auto;
+	z-index: -1;
+}
 /* module-6 journey section css code  */
 .vimal-journey{
     background-color: #0c56a1;
@@ -1172,6 +1204,9 @@ a:focus{
 .cursor2 {
 	border: 2px solid #ffdc00;
 	box-shadow: 0 0 22px rgba(16, 86, 159,0.6);
+	pointer-events: none;
+	will-change: transform;
+	backdrop-filter: saturate(10) ;
 }
 .cursor2.hover{
 	background: rgba(255,255,255,.1);
