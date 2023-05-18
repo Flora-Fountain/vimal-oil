@@ -60,21 +60,16 @@ a:focus{
     text-align: center;
     text-transform: uppercase;
     color: #0c54a0;
-    font-size: 50px;
+    font-size: 85px;
+    line-height: 1.1;
 }
-.vimal-journey .h1-title {
-	text-align: center;
-	text-transform: uppercase;
-	color: #0c54a0;
-	font-size: 100px;
-	line-height: 1.1;
-}
+
 .h2-title {
 	display: inline-block;
 	width: 100%;
 	color: #ffffff;
 	text-align: center;
-	font-size: 45px;
+	font-size: 55px;
 	line-height: 1.4;
 	margin-bottom: 10px;
 	padding: 0;
@@ -784,6 +779,8 @@ a:focus{
 	background: #0c56a1;
 }
 .nrt-logo img {
+
+	max-width: 100%;
 	max-width: 300px;
 	width: 100%;
 }
