@@ -13,29 +13,49 @@ $(document).ready(function(){
         responsive: {}
     });
     $('.home-prod-sldr').owlCarousel({
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         responsiveClass: true,
-        nav: true,
+        nav: false,
         margin: 30,    
         autoplayTimeout: 4000,
         smartSpeed: 400,
-        center: true,
+        center: false,
         responsive: {
             0: {
                 items: 2,
                 margin: 10, 
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
             },
             480: {
                 items: 3,
                 margin: 10, 
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
             },
             575: {
                 items: 3,
                 margin: 10, 
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
             },
             991: {
-                items: 4
+                items: 4,
+                loop: true,
+                autoplay: true,
+                center: true,
+                autoplayTimeout: 4000,
+                smartSpeed: 400,
             },
             1200: {
                 items: 5
@@ -54,8 +74,9 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         margin: -320,
         responsive: {
-            991: {
-                margin: -80
+            768: {
+                margin: -100,
+                center: true,
             },
             992: {
                 margin: -130
@@ -69,6 +90,10 @@ $(document).ready(function(){
         }
         
     })
+    // Set time imterval to pop the heart in the banner
+    setInterval(function(){ 
+        $('.banner-heart').addClass("pop")
+    }, 3000);
 });
 // Sticky Header JS Starts
 if ($(window).width() > 0) {
