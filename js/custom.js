@@ -74,9 +74,22 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         margin: -320,
         responsive: {
+            0: {
+                margin: -100,
+                stagePadding: 40,
+            },
+            360: {
+                margin: -100,
+                stagePadding: 50,
+            },
+            480: {
+                margin: -120,
+                stagePadding: 80,
+            },
             768: {
                 margin: -100,
                 center: true,
+                stagePadding: 100,
             },
             992: {
                 margin: -130
@@ -90,10 +103,72 @@ $(document).ready(function(){
         }
         
     })
+
+    $(".menu-btn").on("click", function(e) {
+        $(".menu-float").toggleClass("m-open"), e.preventDefault()
+    }), $(".close-btn").on("click", function(e) {
+        $(".menu-float").removeClass("m-open"), e.preventDefault()
+    })
+
+    
     // Set time imterval to pop the heart in the banner
     setInterval(function(){ 
         $('.banner-heart').addClass("pop")
     }, 3000);
+
+    // Instagram slider
+    function detect_active() {
+        // get active
+        var get_active = $("#dp-slider .dp_item:last-child").data("class");
+        $(".bg-item").removeClass("active");
+        $(".bg-item[data-item=" + get_active + "]").addClass("active");
+      }
+      $("#dp-next").click(function () {
+        var total = $(".dp_item").length;
+        $("#dp-slider .dp_item:first-child").hide().appendTo("#dp-slider").fadeIn();
+        $.each($(".dp_item"), function (index, dp_item) {
+          $(dp_item).attr("data-position", index + 1);
+        });
+        detect_active();
+      });
+    
+      $("#dp-prev").click(function () {
+        var total = $(".dp_item").length;
+        $("#dp-slider .dp_item:last-child").hide().prependTo("#dp-slider").fadeIn();
+        $.each($(".dp_item"), function (index, dp_item) {
+          $(dp_item).attr("data-position", index + 1);
+        });
+    
+        detect_active();
+      });
+    
+      // $("#dp-dots li").click(function () {
+      //   $("#dp-dots li").removeClass("active");
+      //   $(this).addClass("active");
+      //   var get_slide = $(this).attr("data-class");
+      //   console.log(get_slide);
+      //   $("#dp-slider .dp_item[data-class=" + get_slide + "]")
+      //     .hide()
+      //     .appendTo("#dp-slider")
+      //     .fadeIn();
+      //   $.each($(".dp_item"), function (index, dp_item) {
+      //     $(dp_item).attr("data-position", index + 1);
+      //   });
+      // });
+    
+      $("body").on("click", "#dp-slider .dp_item:not(:last-child)", function () {
+        var get_slide = $(this).attr("data-class");
+        console.log(get_slide);
+        $("#dp-slider .dp_item[data-class=" + get_slide + "]")
+          .hide()
+          .appendTo("#dp-slider")
+          .fadeIn();
+        $.each($(".dp_item"), function (index, dp_item) {
+          $(dp_item).attr("data-position", index + 1);
+        });
+    
+        detect_active();
+      });
 });
 // Sticky Header JS Starts
 if ($(window).width() > 0) {

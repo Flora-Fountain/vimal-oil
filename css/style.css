@@ -17,10 +17,6 @@ body{
 h1,h2,h3,h4{
     font-family: 'Rimouski', sans-serif;
 }
-p{
-    font-size: 20px;
-    text-align: center;
-}
 ol,ul{
     line-height:1.4;
     margin-bottom:15px;
@@ -640,15 +636,18 @@ a:focus{
     width: 100%;
     height: 80px;
     animation: oil-wave 4s infinite linear;
-  }
-  @keyframes oil-wave{
+}
+@keyframes oil-wave{
     0%,100%{
       clip-path: polygon(0% 69%, 6% 74%, 12% 78%, 18% 76%, 23% 70%, 28% 66%, 33% 62%, 38% 63%, 42% 67%, 46% 74%, 50% 78%, 54% 79%, 59% 78%, 63% 75%, 68% 71%, 73% 68%, 79% 66%, 84% 68%, 93% 72%, 97% 74%, 100% 75%, 100% 100%, 0% 100%);
     }
     50%{
       clip-path: polygon(0% 64%, 6% 69%, 12% 73%, 18% 71%, 23% 65%, 28% 61%, 33% 57%, 38% 58%, 42% 62%, 46% 69%, 50% 73%, 54% 74%, 59% 74%, 63% 70%, 68% 66%, 73% 59%, 79% 61%, 84% 63%, 93% 67%, 97% 69%, 100% 70%, 100% 100%, 0% 100%);
     }
-  }
+}
+.pro-sld-main.light-blue{
+    background:#018bcc;
+}
 .pro-sld-main.red{
     background:#ed5839;
 }
@@ -662,6 +661,7 @@ a:focus{
 	max-width: 253px;
 	height: auto;
 	margin: 0 auto;
+    position: relative;
 }
 .pro-sld-main a {
 	font-size: 30px;
@@ -720,20 +720,24 @@ a:focus{
 .nrt-section .animate-svg svg{
     fill: none;
 }
-.nrt-section p{
-    color: #0c54a0;
+.nrt-section p {
+	color: #0c54a0;
+	font-size: 30px;
+	max-width: 740px;
+	margin: 40px auto;
+	line-height: 1.4;
 }
-.animate-text{
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 320px;
+.animate-text {
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 530px;
 }
 .animate-text span{
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0c54a0;
-    font-size: 40px;
+    font-size: 64px;
     font-family: 'Rimouski', sans-serif;
 }
 .nrt-ills {
@@ -743,6 +747,9 @@ a:focus{
 	background: -webkit-linear-gradient(45deg, #e4c57b, #f7e6a9 50%, #e4c57b 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+.nrt-section .h1-title {
+	margin-bottom: 30px;
 }
 .nrt-top .text-center {
 	font-size: 30px;
@@ -756,8 +763,8 @@ a:focus{
 	content: '';
 	border-radius: 0 100% 100% 0 / 50%;
 	background: #fff;
-	width: 49%;
-	height: calc(100% - 140px);
+	width: 49.2%;
+	height: calc(100% - 250px);
 	z-index: 0;
 	bottom: auto;
 	left: 0;
@@ -773,14 +780,12 @@ a:focus{
 	width: 100%;
 	text-align: center;
 	max-width: 320px;
-	margin: 699px auto 0;
+	margin: 418px auto 0;
 	padding: 40px;
 	border-radius: 50%;
 	background: #0c56a1;
 }
 .nrt-logo img {
-
-	max-width: 100%;
 	max-width: 300px;
 	width: 100%;
 }
@@ -845,8 +850,9 @@ a:focus{
 }
 .jorney-main .nav {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
+	margin-top: 40px;
 }
 .jorney-main .nav-pills .nav-link.active {
 	background: transparent;
@@ -891,9 +897,7 @@ a:focus{
       opacity: 1;
     }
   }
-.jorney-main .nav-pills .nav-link {
-	width: 33.33%;
-}
+
 .jorney-main .nav-pills .nav-link img {
 	width: 80%;
 	height: auto;
@@ -904,8 +908,26 @@ a:focus{
 .jorney-main .nav-pills .nav-link.active img {
 	padding: 5px;
 }
-.jorney-main .nav-pills .nav-link:nth-child(-n+3) {
+.jorney-main .tab-content .j-para {
+	display: block;
+	width: 100%;
+	text-align: left;
+	color: #fff;
+	font-size: 22px;
+	max-width: 600px;
+	margin: 0 auto;
+}
+.jorney-main .tab-content .j-para .j-year {
+	font-size: 100px;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	display: inline-block;
 	margin-bottom: 30px;
+	line-height: 1;
+}
+.jorney-main .nav-pills .nav-link {
+	width: 16.6%;
 }
 .start {
 	display: inline-block;
@@ -963,6 +985,144 @@ a:focus{
 }
 .recipe-section .cook-video{
     position: relative;
+}
+.social-presence .h1-title {
+	color: #fff;
+}
+.dp-wrap {
+    margin: 50px auto;
+    position: relative;
+    perspective: 1000px;
+    height: 100%;
+}
+  
+.dp-slider {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+  
+.dp-slider div {
+    transform-style: preserve-3d;
+}
+#dp-slider,
+.dp-img img {
+    height: 350px;
+}
+.dp_item {
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    transition: transform 1.2s; 
+    overflow: hidden;
+    right:20%;
+    width: 350px;  
+}
+.dp-img img {
+    border-left: 1px solid #fff;
+}
+.dp_item[data-position="1"] {
+    z-index: 1;
+    transform: rotateY(0deg) translateY(35%) scale(0.8);
+}
+.dp_item[data-position="2"] {
+    z-index: 2;
+    transform: rotateY(0deg) translateY(25%) scale(0.85);
+}
+.dp_item[data-position="3"] {
+    z-index: 3;
+    transform: rotateY(0deg) translateY(15%) scale(0.9);
+}
+#dp-slider .dp_item:last-child {
+    z-index: 4 !important;
+    transform: rotateY(0deg) translateY(0px) !important;
+}
+#dp-next, #dp-prev {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	height: 60px;
+	width: 60px;
+	z-index: 10;
+	cursor: pointer;
+}
+#dp-next svg, #dp-prev svg{
+    -webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+    fill: #fff;
+}
+#dp-next svg:hover, #dp-prev svg:hover{
+    fill: #fbef4d;
+}
+#dp-prev {
+    left: 15px;
+}
+.dp-img img {
+    object-fit: cover; 
+} 
+#dp-slider .dp_item:hover:not(:last-child) {
+    cursor: pointer;
+}
+.social-sec {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+.h3-ttl {
+	display: inline-block;
+	width: auto;
+	font-size: 40px;
+	margin-bottom: 20px;
+	line-height: 1.3;
+}
+.social-sec p {
+	font-size: 30px;
+	line-height: 1.2;
+	max-width: 450px;
+	margin: 0 auto;
+}
+.socials {
+	display: inline-block;
+	margin-top: 50px;
+}
+.socials ul {
+	display: inline-block;
+	width: 100%;
+}
+.socials ul li{
+	display: inline-block;
+}
+.socials li a {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+}
+.socials li a span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.socials li a span svg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 80%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	-webkit-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+	fill: #fff;
+}
+.socials li a:hover span svg {
+	fill: #fbef4d;
 }
 /* module-9 social-presence css code */
 .social-presence{

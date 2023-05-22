@@ -3,6 +3,13 @@
     .pro-sld-main img {
         max-width: 216px;
     }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 246px);
+    }
+    .nrt-logo {
+        max-width: 300px;
+        margin: 410px auto 0;
+    }
 }
 @media screen and (max-width:1499px){
     .hero-banner .banner-left img {
@@ -20,6 +27,21 @@
     .hero-banner::after {
         width: 800px;
         height: 800px;
+    }
+    .white-sec::before {
+        bottom: -50px;
+        height: 280px;
+    }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 246px);
+    }
+    .nrt-logo {
+        max-width: 280px;
+        margin: 390px auto 0;
+    }
+    .nrt-top .text-center {
+        font-size: 28px;
+        max-width: 550px;
     }
 }
 @media screen and (max-width:1399px) {
@@ -90,9 +112,20 @@
     .pro-sld-main {
         padding: 60px 0 60px;
     }
+    .nrt-logo {
+        max-width: 272px;
+    }
+    .nrt-section .h1-title,.vimal-journey .h1-title,.recipe-section .h1-title {
+        font-size: 74px;
+    }
 }
 @media screen and (max-width:1299px) {
-    
+    .nrt-logo {
+        max-width: 263px;
+    }
+    .nrt-top .text-center {
+        font-size: 24px;
+    }
 }
 @media screen and (max-width:1199px) {
     .header {
@@ -180,10 +213,35 @@
     .pro-sld-main a {
         max-width: 170px;
     }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 366px);
+    }
+    .white-sec::before {
+        bottom: -50px;
+        height: 240px;
+    }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 257px);
+    }
+    .nrt-logo {
+        max-width: 220px;
+        margin: 310px auto 0;
+    }
 }
 @media screen and (max-width:991px) {
     .pro-vdo-sld.owl-carousel .owl-stage {
         padding: 0;
+    }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 253px);
+    }
+    .white-sec::before {
+        bottom: -50px;
+        height: 220px;
+    }
+    .nrt-logo {
+        max-width: 200px;
+        margin: 310px auto 0;
     }
 }
 @media screen and (max-width:767px) {
@@ -322,16 +380,62 @@
     .sub-text {
         padding: 0 15px;
     }
+    .nrt-top .text-center {
+        font-size: 20px;
+    }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 266px);
+    }
+    .white-sec::before {
+        bottom: -50px;
+        height: 217px;
+    }
+    .nrt-logo {
+        max-width: 180px;
+        margin: 180px auto 0;
+        padding: 30px;
+    }
+    .pro-vdo-sld .video-sld img {
+        height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 @media screen and (max-width:575px) {
     .pro-sld-main a {
         font-size: 16px;
     }
-    
+    .nrt-logo {
+        max-width: 162px;
+        margin: 180px auto 0;
+        padding: 20px;
+    }
+    .white-sec::before {
+        height: 198px;
+    }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 266px);
+    }
 }
 @media screen and (max-width:479px) {
     .pro-sld-main a {
         font-size: 18px;
+    }
+    .nrt-ills::before, .nrt-ills::after {
+        height: calc(100% - 324px);
+        top: 200px;
+    }
+    .white-sec::before {
+        height: 188px;
+    }
+    .nrt-logo {
+        margin: 280px auto 0;
+    }
+    .nrt-top .text-center {
+        font-size: 18px;
+    }
+    .pro-vdo-sld.owl-carousel .item {
+        padding: 0;
     }
 }
 @media screen and (max-width:359px) {
