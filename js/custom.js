@@ -141,21 +141,7 @@ $(document).ready(function(){
     
         detect_active();
       });
-    
-      // $("#dp-dots li").click(function () {
-      //   $("#dp-dots li").removeClass("active");
-      //   $(this).addClass("active");
-      //   var get_slide = $(this).attr("data-class");
-      //   console.log(get_slide);
-      //   $("#dp-slider .dp_item[data-class=" + get_slide + "]")
-      //     .hide()
-      //     .appendTo("#dp-slider")
-      //     .fadeIn();
-      //   $.each($(".dp_item"), function (index, dp_item) {
-      //     $(dp_item).attr("data-position", index + 1);
-      //   });
-      // });
-    
+      
       $("body").on("click", "#dp-slider .dp_item:not(:last-child)", function () {
         var get_slide = $(this).attr("data-class");
         console.log(get_slide);

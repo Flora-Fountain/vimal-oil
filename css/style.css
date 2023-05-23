@@ -1,5 +1,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Comme:wght@100;200;300;400;500;600;700;800;900&display=swap');
 html,body{overflow-x:hidden;} */
+
+
+/* font-family: 'Quicksand', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -84,7 +90,7 @@ a:focus{
 	transition: 0.3s;
 }
 .header.sticky {
-	background: rgba(12, 86, 161,0.8);
+	background: rgba(12, 86, 161,0.9);
 	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.9);
 	padding: 10px 25px;
 }
@@ -105,12 +111,32 @@ a:focus{
 } 
 .nav-menu .menu-btn span{
     width: 40px;
-    height: 4px;
+    height: 3px;
     display: block;
     background-color: #fff;
     -webkit-transition: 0.3s;
     -ms-transition: 0.3s;
     transition: 0.3s;
+	float: right;
+}
+.nav-menu .menu-btn span:nth-child(1){
+	width: 30px;
+	animation: line-length 2s infinite linear;
+}
+@keyframes line-length{
+	0%{width: 30px;}
+	50%{width: 40px;}
+	100%{width: 30px;}
+}
+.nav-menu .menu-btn span:last-child{
+	width: 20px;
+	animation: line-length-bottom 2s infinite linear;
+	animation-delay: 1.5s;
+}
+@keyframes line-length-bottom{
+	0%{width: 20px;}
+	50%{width: 40px;}
+	100%{width: 20px;}
 }
 .nav-menu .menu-btn span+span{
     margin-top: 10px;
@@ -142,16 +168,29 @@ a:focus{
 .hero-banner::after {
 	position: absolute;
 	content: '';
-	background: url(../images/rays2.png);
+	background: url(../images/white-rays.png);
 	background-repeat: no-repeat;
-	width: 900px;
-	height: 900px;
-	left: 8%;
+	width: 100%;
+	height: 100%;
+	left: 50%;
 	top: 50%;
-	background-size: contain;
+	background-size: cover;
 	z-index: -1;
-	transform: translateY(-50%);
-	opacity: 0.1;
+	transform: translate(-50%,-50%);
+	background-position: center top;
+	animation: rotate-rays 20s infinite linear;
+}
+@keyframes rotate-rays{
+	0%{transform: translate(-50%,-50%) rotate(0deg);}
+	100%{transform: translate(-50%,-50%) rotate(360deg);}
+}
+.back-pattern {
+	position: relative;
+	background: -moz-radial-gradient(ellipse at 50% 50%, rgba(24, 140, 207, 0.26) 0%, rgba(255, 255, 255, 0) 80%);
+	background: -webkit-radial-gradient(ellipse at 50% 50%, rgba(24, 140, 207, 0.26) 0%, rgba(255, 255, 255, 0) 80%);
+	background: -o-radial-gradient(ellipse at 50% 50%, rgba(24, 140, 207, 0.26) 0%, rgba(255, 255, 255, 0) 80%);
+	background: -ms-radial-gradient(ellipse at 50% 50%, rgba(24, 140, 207, 0.26) 0%, rgba(255, 255, 255, 0) 80%);
+	background: radial-gradient(ellipse at 50% 50%, rgba(24, 140, 207, 0.26) 0%, rgba(255, 255, 255, 0) 80%);
 }
 .carousel .carousel-item img {
     display: block;
@@ -391,14 +430,15 @@ a:focus{
 	background-color: #fff;
 	padding-top: 100px;
 }
-.health-section::before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-bottom: 50px solid #0c56a1;
-    border-left: 100vw solid transparent;
-    position: absolute;
-    bottom: 0;
+.health-section::before {
+	content: '';
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid #0c56a1;
+	border-left: 100vw solid transparent;
+	position: absolute;
+	bottom: 0;
+	z-index: 1;
 }
 .health-section .h2-title, .form-section .form .h2-title{
     color: #0c54a0;
@@ -423,42 +463,39 @@ a:focus{
 .leaf-sec::before {
 	position: absolute;
 	content: '';
-	background: url(../images/leaf-top.png);
+	background: url(../images/sun-flower.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 260px;
 	height: 270px;
-	right: 0;
-	top: 100px;
-	animation: wind 3s infinite linear;
-    z-index: -1;
+	right: -120px;
+	top: 0;
+	animation: fl-rotate 20s infinite linear;
+	z-index: -1;
 }
-@keyframes wind {
+@keyframes fl-rotate {
     0% {
-        transform: rotate(-1deg);
-        transform-origin: center right 260px;
+        transform: rotate(0deg);
     }
     50%{
-        transform: rotate(0deg);
-        transform-origin: center top 260px;
+        transform: rotate(180deg);
     }
     100%{
-        transform: rotate(-1deg);
-        transform-origin: center right 260px;
+        transform: rotate(360deg);
     }
 }
 .leaf-sec::after {
 	position: absolute;
 	content: '';
-	background: url(../images/tree-bottom.png);
+	background: url(../images/sun-flower.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 260px;
 	height: 270px;
-	left: -20px;
+	left: -135px;
 	bottom: 0px;
-	animation: wind-left 3s infinite linear;
-    z-index: -1;
+	animation: fl-rotate 20s infinite linear;
+	z-index: -1;
 }
 @keyframes wind-left {
     0% {
@@ -473,6 +510,65 @@ a:focus{
         transform: rotate(-1deg);
         transform-origin: center left 260px;
     }
+}
+.falling-leaf {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	z-index: -1;
+}
+.falling-leaf > div {
+	position: absolute;
+	display: block;
+}
+.falling-leaf > div:nth-child(1) {
+	left: 8%;
+	animation: animate 15s linear infinite;
+	animation-delay: -7s;
+}
+.falling-leaf > div:nth-child(1) img {
+	width: 70px;
+}
+.falling-leaf > div:nth-child(2) {
+	left: 50%;
+	animation: animate 20s linear infinite;
+	animation-delay: 0s;
+	animation-delay: -5s;
+}
+.falling-leaf > div:nth-child(3) {
+	left: 80%;
+	animation: animate 20s linear infinite;
+	animation-delay: 0s;
+}
+@keyframes animate{
+    0%{
+        opacity:0;
+        top: -10%;
+        transform:translateX(20px) rotate(0deg);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform:translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform:translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform:translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform:translateX(-20px) rotate(180deg);
+    }
+    100%{
+        top: 110%;
+        transform:translateX(-20px) rotate(225deg);
+    }
+    
 }
 .health-section .owl {
 	margin-bottom: 40px;
@@ -803,19 +899,121 @@ a:focus{
 	height: 320px;
 	z-index: -1;
 }
-.white-sec::after {
+.droplets {
 	position: absolute;
-	content: '';
-	background: url(../images/drops-bg.png);
-	background-repeat: no-repeat;
-	background-size: contain;
+	width: 100%;
+	height: 100%;
+	top: 0;
 	left: 0;
-	right: auto;
-	top: 80px;
-	bottom: 0;
-	width: 100vw;
-	height: auto;
-	z-index: -1;
+	pointer-events: none;
+	z-index: 2;
+	overflow: hidden;
+}
+.droplets > div {
+	position: absolute;
+	display: block;
+}
+.droplets > div:nth-child(1) {
+	left: -2%;
+	animation: drop-animation 10s linear infinite;
+	animation-delay: -8s;
+}
+.droplets > div:nth-child(2) {
+	left: 96.5%;
+	animation: drop-animation 18s linear infinite;
+	animation-delay: -4s;
+}
+.droplets > div:nth-child(3) {
+	left: 8%;
+	animation: drop-animation 15s linear infinite;
+	animation-delay: -7s;
+}
+.droplets > div:nth-child(4) {
+	left: 24%;
+	animation: drop-animation 20s linear infinite;
+	animation-delay: -5s;
+}
+.droplets > div:nth-child(5) {
+	left: 35%;
+	animation: drop-animation 10s linear infinite;
+	animation-delay: -2s;
+}
+.droplets > div:nth-child(5) img{
+	width: 20px;
+}
+.droplets > div:nth-child(6) {
+	left: 15%;
+	animation: drop-animation 17s linear infinite;
+	animation-delay: -3s;
+}
+.droplets > div:nth-child(6) img{
+	width: 25px;
+}
+.droplets > div:nth-child(7) {
+	left: 75%;
+	animation: drop-animation 11s linear infinite;
+	animation-delay: -2s;
+}
+.droplets > div:nth-child(8) {
+	left: 85%;
+	animation: drop-animation 14s linear infinite;
+	animation-delay: -4s;
+}
+.droplets > div:nth-child(8) img{
+	width: 30px;
+}
+.droplets > div:nth-child(9) {
+	left: 65%;
+	animation: drop-animation 18s linear infinite;
+	animation-delay: -1s;
+}
+.droplets > div:nth-child(9) img{
+	width: 30px;
+}
+.droplets > div:nth-child(10) {
+	left: 80%;
+	animation: drop-animation 10s linear infinite;
+	animation-delay: -6s;
+}
+.droplets > div:nth-child(10) img{
+	width: 25px;
+}
+.droplets > div:nth-child(11) {
+	left: 70%;
+	animation: drop-animation 18s linear infinite;
+	animation-delay: -4s;
+}
+.droplets > div:nth-child(11) img{
+	width: 30px;
+}
+@keyframes drop-animation{
+    0%{
+        opacity:0;
+        top: 10%;
+        transform:translateX(0px);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform:translateX(0px);
+    }
+    40%{
+        transform:translateX(0px);
+    }
+    60%{
+        transform:translateX(0px);
+		opacity:1;
+    }
+    80%{
+        transform:translateX(0px);
+		opacity:0;
+    }
+    100%{
+		opacity:0;
+        top: 100%;
+        transform:translateX(0px);
+    }
 }
 /* module-6 journey section css code  */
 .vimal-journey{
