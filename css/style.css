@@ -54,7 +54,7 @@ a:focus{
     border:0 !important;
 }
 .default-section{
-    padding: 50px 0px;
+    padding: 100px 0px;
     position: relative;
 }
 .h1-title{
@@ -64,18 +64,27 @@ a:focus{
     font-size: 85px;
     line-height: 1.1;
 }
-
+.h1-title span {
+	display: block;
+	font-size: 40px;
+	text-transform: capitalize;
+}
 .h2-title {
 	display: inline-block;
 	width: 100%;
 	color: #ffffff;
 	text-align: center;
 	font-size: 55px;
-	line-height: 1.4;
+	font-weight: bold;
+	line-height: 1.3;
 	margin-bottom: 10px;
 	padding: 0;
 }
-
+.h2-title span {
+	display: block;
+	font-size: 40px;
+	text-transform: capitalize;
+}
 /*  module-1 header css code */
 .header {
 	width: 100%;
@@ -178,7 +187,8 @@ a:focus{
 	z-index: -1;
 	transform: translate(-50%,-50%);
 	background-position: center top;
-	animation: rotate-rays 20s infinite linear;
+	/* animation: rotate-rays 20s infinite linear; */
+	animation: none;
 }
 @keyframes rotate-rays{
 	0%{transform: translate(-50%,-50%) rotate(0deg);}
@@ -495,6 +505,7 @@ a:focus{
 	left: -135px;
 	bottom: 0px;
 	animation: fl-rotate 20s infinite linear;
+	animation-direction: reverse;
 	z-index: -1;
 }
 @keyframes wind-left {
@@ -535,7 +546,6 @@ a:focus{
 .falling-leaf > div:nth-child(2) {
 	left: 50%;
 	animation: animate 20s linear infinite;
-	animation-delay: 0s;
 	animation-delay: -5s;
 }
 .falling-leaf > div:nth-child(3) {
@@ -1032,14 +1042,6 @@ a:focus{
     position: absolute;
     bottom: 0;
 }
-.h1-title span {
-	display: block;
-	font-size: 40px;
-	text-transform: capitalize;
-}
-.vimal-journey .h2-title{
-    color: #ffffff;
-}
 .head-para{
     text-align: center;
     font-weight: 600;
@@ -1126,6 +1128,9 @@ a:focus{
 .jorney-main .nav-pills .nav-link {
 	width: 16.6%;
 }
+.jorney-main {
+	margin-top: 40px;
+}
 .start {
 	display: inline-block;
 	width: 100%;
@@ -1138,11 +1143,20 @@ a:focus{
 	line-height: 1.4;
 }
 /* module-7 oil-quiz section css  */
+.oil-quiz .h2-title{
+	font-size: 54px;
+}
 .oil-quiz{
     background-color: #ffffff;
 }
 .oil-quiz .h2-title, .oil-quiz p{
     color: #0c54a0;
+}
+.oil-quiz p {
+	text-align: center;
+	font-size: 30px;
+	max-width: 560px;
+	margin: 20px auto;
 }
 .oil-quiz-left img{
     display: block;
@@ -1158,9 +1172,10 @@ a:focus{
 .recipe-section{
     background-color: #fff;
 }
-.recipe-section .h1-title{
+.recipe-section .h2-title{
     display: inline-block;
     margin-bottom: 30px;
+	color: #0c54a0;
 }
 
 .recipe-section::before{
